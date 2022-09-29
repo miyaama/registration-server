@@ -8,7 +8,7 @@ const tzoffset = new Date().getTimezoneOffset() * 60000;
 
 const port = process.env.PORT || 3000;
 
-const db = mysql.createConnection({
+const db = mysql.createPool({
   host: "eu-cdbr-west-03.cleardb.net",
   user: "ba4d9726f43dc0",
   password: "6e8329b2",
